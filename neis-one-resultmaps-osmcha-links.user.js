@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         neis-one osm-suspicious OSMCha Links
 // @namespace    https://github.com/marvk/neis-one-osm-suspicious-osmcha-links
-// @version      1.1.1
+// @version      1.1.2
 // @description  Add OSMCha links to https://resultmaps.neis-one.org/osm-suspicious
 // @author       marvk
 // @match        https://resultmaps.neis-one.org/osm-suspicious*
@@ -16,7 +16,7 @@ const createOsmChaLink = e => {
     const id = e.firstElementChild.href.split("/").at(-1);
 
     const link = document.createElement("a");
-    link.href = "https://osmcha.org/changeset/" + id
+    link.href = "https://osmcha.org/changesets/" + id
     link.textContent = "OSMCha"
 
     const bold = document.createElement("b");
