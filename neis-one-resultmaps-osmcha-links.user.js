@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         neis-one osm-suspicious OSMCha Links
 // @namespace    https://github.com/marvk/neis-one-osm-suspicious-osmcha-links
-// @version      1.1.3
+// @version      1.1.4
 // @description  Add OSMCha links to https://resultmaps.neis-one.org/osm-suspicious
 // @author       marvk
 // @match        https://resultmaps.neis-one.org/osm-suspicious*
@@ -60,7 +60,7 @@ const modifyPopup = e => {
 const updatePopup = () => {
     const popupContent = document.getElementsByClassName("leaflet-popup-content").item(0);
 
-    if (popupContent) {
+    if (popupContent && !popupContent.textContent.includes("OSMCha")) {
         disconnectPopupObserver();
         modifyPopup(popupContent);
         connectPopupObserver();
