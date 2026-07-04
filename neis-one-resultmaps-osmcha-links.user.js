@@ -1,10 +1,10 @@
 // ==UserScript==
 // @name         neis-one osm-suspicious OSMCha Links
 // @namespace    https://github.com/marvk/neis-one-osm-suspicious-osmcha-links
-// @version      1.0.0
+// @version      1.0.1
 // @description  Add OSMCha links to https://resultmaps.neis-one.org/osm-suspicious
 // @author       marvk
-// @match        https://resultmaps.neis-one.org/osm-suspicious
+// @match        https://resultmaps.neis-one.org/osm-suspicious*
 // @icon         https://wiki.openstreetmap.org/w/images/7/79/Public-images-osm_logo.svg
 // @grant        none
 // ==/UserScript==
